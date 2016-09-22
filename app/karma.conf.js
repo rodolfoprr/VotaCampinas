@@ -11,6 +11,7 @@ module.exports = function(config) {
       // App services, controllers, directives, filters, etc.
       'controllers/*.js',
       'services/*.js',
+      'filters/*.js',
       // Unit tests
       'test/unit/**/*.spec.js'
     ],
