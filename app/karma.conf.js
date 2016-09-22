@@ -6,6 +6,7 @@ module.exports = function(config) {
       'vendor/angular-route.js',
       'vendor/angular-mocks.js',
       'vendor/satellizer.js',
+      'vendor/loading-bar.min.js',
       // App entry point
       'app.js',
       // App services, controllers, directives, filters, etc.

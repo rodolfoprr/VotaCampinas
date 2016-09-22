@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for app/app.js</title>
+    <title>Code coverage report for app\app.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -20,28 +20,28 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">20% </span>
+        <span class="strong">66.67% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>3/15</span>
+        <span class='fraction'>10/15</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">16.67% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/6</span>
+        <span class='fraction'>1/6</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">50% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/4</span>
+        <span class='fraction'>2/4</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">20% </span>
+        <span class="strong">66.67% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>3/15</span>
+        <span class='fraction'>10/15</span>
       </div>
     </div>
   </div>
-  <div class='status-line low'></div>
+  <div class='status-line medium'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
@@ -148,11 +148,11 @@
 103
 104</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -223,9 +223,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -244,18 +244,18 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">angular.module('votaCampinas', ['ngRoute', 'satellizer', 'angular-loading-bar'])
-  .config(<span class="fstat-no" title="function not covered" >function ($routeProvider, $locationProvider, $authProvider, cfpLoadingBarProvider) {</span>
-<span class="cstat-no" title="statement not covered" >    $locationProvider.html5Mode(true);</span>
+  .config(function ($routeProvider, $locationProvider, $authProvider, cfpLoadingBarProvider) {
+    $locationProvider.html5Mode(true);
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    cfpLoadingBarProvider.parentSelector = '.loading-bar-container';</span>
+    cfpLoadingBarProvider.parentSelector = '.loading-bar-container';
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    $routeProvider</span>
+    $routeProvider
       .when('/', {
         templateUrl: 'partials/home/home.html'
       })
@@ -326,9 +326,9 @@
         templateUrl: 'partials/404.html'
       });
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    $authProvider.loginUrl = '/login';</span>
-<span class="cstat-no" title="statement not covered" >    $authProvider.signupUrl = '/signup';</span>
-<span class="cstat-no" title="statement not covered" >    $authProvider.facebook({</span>
+    $authProvider.loginUrl = '/login';
+    $authProvider.signupUrl = '/signup';
+    $authProvider.facebook({
       url: '/auth/facebook',
       clientId: '980220002068787',
       redirectUri: 'http://localhost:3000/auth/facebook/callback'
@@ -346,8 +346,8 @@
       }
     }
   })
-  .run(<span class="fstat-no" title="function not covered" >function ($rootScope, $window) {</span>
-<span class="cstat-no" title="statement not covered" >    if ($window.localStorage.user) {</span>
+  .run(function ($rootScope, $window) {
+    <span class="missing-if-branch" title="if path not taken" >I</span>if ($window.localStorage.user) {
 <span class="cstat-no" title="statement not covered" >      $rootScope.currentUser = JSON.parse($window.localStorage.user);</span>
     }
   });
@@ -358,7 +358,7 @@
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Thu Sep 22 2016 12:02:04 GMT+1000 (AEST)
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Sep 23 2016 00:44:59 GMT+1000 (AUS Eastern Standard Time)
 </div>
 </div>
 <script src="../prettify.js"></script>

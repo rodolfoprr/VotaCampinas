@@ -1,15 +1,11 @@
 describe('Filter - Capitalize', function() {
-  // const $filter;
+  var $filter = null;
 
   beforeEach(function() {
     module('votaCampinas');
 
-    // inject(function(_$filter_) {
-	  //   $filter = _$filter_;
-	  // });
-
-    inject(function() {
-
+    inject(function(_$filter_) {
+      $filter = _$filter_;
     });
   });
 
